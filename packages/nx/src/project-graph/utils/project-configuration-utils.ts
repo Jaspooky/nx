@@ -791,6 +791,8 @@ export function mergeTargetConfigurations(
     );
   }
 
+  result.parallelism ??= true;
+
   return result as TargetConfiguration;
 }
 
