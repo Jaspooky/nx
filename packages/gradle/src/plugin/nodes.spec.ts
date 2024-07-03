@@ -102,6 +102,16 @@ describe('@nx/gradle/plugin', () => {
                       "^production",
                     ],
                     "metadata": {
+                      "help": {
+                        "command": "./gradlew help --task proj:test",
+                        "example": {
+                          "options": {
+                            "args": [
+                              "--rerun",
+                            ],
+                          },
+                        },
+                      },
                       "technologies": [
                         "gradle",
                       ],
@@ -172,6 +182,16 @@ describe('@nx/gradle/plugin', () => {
                       "^production",
                     ],
                     "metadata": {
+                      "help": {
+                        "command": "./gradlew help --task proj:test",
+                        "example": {
+                          "options": {
+                            "args": [
+                              "--rerun",
+                            ],
+                          },
+                        },
+                      },
                       "technologies": [
                         "gradle",
                       ],
@@ -254,6 +274,16 @@ describe('@nx/gradle/plugin', () => {
                       "^production",
                     ],
                     "metadata": {
+                      "help": {
+                        "command": "./gradlew help --task proj:test",
+                        "example": {
+                          "options": {
+                            "args": [
+                              "--rerun",
+                            ],
+                          },
+                        },
+                      },
                       "technologies": [
                         "gradle",
                       ],
@@ -280,6 +310,16 @@ describe('@nx/gradle/plugin', () => {
                     ],
                     "metadata": {
                       "description": "Runs Gradle Tests in CI",
+                      "help": {
+                        "command": "./gradlew help --task proj:test",
+                        "example": {
+                          "options": {
+                            "args": [
+                              "--rerun",
+                            ],
+                          },
+                        },
+                      },
                       "nonAtomizedTarget": "test",
                       "technologies": [
                         "gradle",
@@ -298,6 +338,16 @@ describe('@nx/gradle/plugin', () => {
                     ],
                     "metadata": {
                       "description": "Runs Gradle Tests test in CI",
+                      "help": {
+                        "command": "./gradlew help --task proj:test",
+                        "example": {
+                          "options": {
+                            "args": [
+                              "--rerun",
+                            ],
+                          },
+                        },
+                      },
                       "technologies": [
                         "gradle",
                       ],
@@ -315,6 +365,16 @@ describe('@nx/gradle/plugin', () => {
                     ],
                     "metadata": {
                       "description": "Runs Gradle Tests test1 in CI",
+                      "help": {
+                        "command": "./gradlew help --task proj:test",
+                        "example": {
+                          "options": {
+                            "args": [
+                              "--rerun",
+                            ],
+                          },
+                        },
+                      },
                       "technologies": [
                         "gradle",
                       ],

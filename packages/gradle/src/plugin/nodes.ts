@@ -261,6 +261,14 @@ async function createGradleTargets(
       dependsOn: dependsOnMap[task.name],
       metadata: {
         technologies: ['gradle'],
+        help: {
+          command: `${getGradleExecFile()} help --task ${taskCommandToRun}`,
+          example: {
+            options: {
+              args: ['--rerun'],
+            },
+          },
+        },
       },
       ...(output ? { outputs: [output] } : {}),
     };
@@ -312,6 +320,14 @@ function getTestTargets(
     dependsOn: dependsOnMap['test'],
     metadata: {
       technologies: ['gradle'],
+      help: {
+        command: `${getGradleExecFile()} help --task ${taskCommandToRun}`,
+        example: {
+          options: {
+            args: ['--rerun'],
+          },
+        },
+      },
     },
     ...(outputs.length > 0 ? { outputs } : {}),
   };
@@ -338,6 +354,14 @@ function getTestTargets(
       metadata: {
         technologies: ['gradle'],
         description: `Runs Gradle Tests ${testName} in CI`,
+        help: {
+          command: `${getGradleExecFile()} help --task ${taskCommandToRun}`,
+          example: {
+            options: {
+              args: ['--rerun'],
+            },
+          },
+        },
       },
       ...(outputs && outputs.length > 0 ? { outputs } : {}),
     };
@@ -359,6 +383,14 @@ function getTestTargets(
       technologies: ['gradle'],
       description: 'Runs Gradle Tests in CI',
       nonAtomizedTarget: testTargetName,
+      help: {
+        command: `${getGradleExecFile()} help --task ${taskCommandToRun}`,
+        example: {
+          options: {
+            args: ['--rerun'],
+          },
+        },
+      },
     },
   };
   targetGroups[taskType].push(ciTargetName);
